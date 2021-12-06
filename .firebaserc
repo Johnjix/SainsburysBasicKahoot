@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sainsburysbasickahoot": {
+      "hosting": {
+        "SainsburysBasicKahoot": [
+          "sainsburysbasickahoot"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sainsburysbasickahoot"
+  }
+}
