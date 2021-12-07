@@ -10,16 +10,29 @@ import { GameMasterDashboardComponent } from './game-master-dashboard/game-maste
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { GameComponent } from './game/game.component';
+import { UpdateQuestionsModalComponent } from './update-questions-modal/update-questions-modal.component';
+import {
+  AngularFireDatabase,
+  AngularFireDatabaseModule,
+} from '@angular/fire/compat/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, GameMasterDashboardComponent, GameComponent],
+  declarations: [
+    AppComponent,
+    GameMasterDashboardComponent,
+    GameComponent,
+    UpdateQuestionsModalComponent,
+  ],
   imports: [
     BrowserModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
     NgbModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    AngularFireDatabaseModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

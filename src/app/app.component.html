@@ -1,7 +1,7 @@
 <div class="container">
-  <mat-tab-group mat-align-tabs="start">
+  <mat-tab-group>
     <mat-tab label="Quiz">
-      <app-game></app-game>
+      <app-game [gameInstance]="gameInstance"></app-game>
     </mat-tab>
     <mat-tab label="Quiz Master"
       ><app-game-master-dashboard></app-game-master-dashboard

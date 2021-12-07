@@ -1,0 +1,48 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Update Questions</h4>
+  <button
+    class="btn btn-outline-secondary"
+    (click)="_activeModal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="card">
+    <div class="card-header">
+      <span>Q</span>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Q</div>
+        </div>
+        <input class="form-control" type="text" placeholder="Enter Question" />
+      </div>
+    </div>
+    <div class="card-body">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+        neque, dignissimos quo et nostrum ex illum commodi voluptate maiores
+        velit quisquam, voluptatem assumenda dolorum excepturi ad, vitae eos
+        iure. Repellendus.
+      </p>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Answer</div>
+        </div>
+        <input class="form-control" type="text" placeholder="Enter Question" />
+        <div class="input-group-append">
+          <button class="btn btn-success"><i class="fas fa-check"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-primary"
+    (click)="_activeModal.close('Save click')"
+  >
+    <i class="fas fa-save"></i>
+  </button>
+</div>
